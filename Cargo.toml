@@ -1,0 +1,9 @@
+[package]
+name = "rust-eval-db-sqlx"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+sqlx = { version = "0.7", features = [ "runtime-tokio", "tls-rustls" ] }
+tokio = { version = "1.36", features = ["macros"] }
