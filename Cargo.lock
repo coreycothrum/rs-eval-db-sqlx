@@ -43,6 +43,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5ad32ce52e4161730f7098c077cd2ed6229b5804ccf99e5366be1ab72a98b4e1"
 
 [[package]]
+name = "app"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "database",
+ "dotenvy",
+ "sqlx",
+ "tokio",
+]
+
+[[package]]
 name = "atoi"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -198,6 +209,15 @@ checksum = "1bfb12502f3fc46cca1bb51ac28df9d618d813cdc3d2f25b9fe775a34af26bb3"
 dependencies = [
  "generic-array",
  "typenum",
+]
+
+[[package]]
+name = "database"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "sqlx",
+ "tokio",
 ]
 
 [[package]]
@@ -872,15 +892,6 @@ dependencies = [
  "spki",
  "subtle",
  "zeroize",
-]
-
-[[package]]
-name = "rust-eval-db-sqlx"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "sqlx",
- "tokio",
 ]
 
 [[package]]

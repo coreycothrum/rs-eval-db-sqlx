@@ -1,0 +1,12 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+anyhow = { workspace = true }
+database = { workspace = true }
+dotenvy = { workspace = true }
+sqlx = { workspace = true }
+tokio = { workspace = true }

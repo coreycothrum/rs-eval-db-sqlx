@@ -1,10 +1,9 @@
-[package]
-name = "rust-eval-db-sqlx"
-version = "0.1.0"
-edition = "2021"
-publish = false
+[workspace]
+members = ["app", "database"]
 
-[dependencies]
+[workspace.dependencies]
 anyhow = "1.0"
-sqlx = { version = "0.7", features = [ "runtime-tokio", "tls-rustls" ] }
+database = { path = "./database" }
+dotenvy = "0.15"
+sqlx = { version = "0.7", features = [ "runtime-tokio", "tls-rustls", "sqlite" ] }
 tokio = { version = "1.36", features = ["full"] }
